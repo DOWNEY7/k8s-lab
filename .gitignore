@@ -1,0 +1,48 @@
+# Python
+__pycache__/
+*.py[cod]
+*.class
+*.so
+.Python
+env/
+venv/
+.venv/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtualenv / Pipenv / Poetry
+.env
+.venv
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Kubernetes & Helm local artifacts
+*.tgz
+*.lock
+.helm/
+
+# IDE & Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log

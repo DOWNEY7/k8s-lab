@@ -1,0 +1,29 @@
+# Global App Settings
+replicaCount: 1
+
+# FastAPI Microservice Configuration
+api:
+  name: python-api
+  image:
+    repository: python-api
+    tag: latest
+    pullPolicy: Never
+  containerPort: 8000
+  servicePort: 80
+
+# Redis Database Configuration
+redis:
+  name: redis
+  image:
+    repository: redis
+    tag: "7"
+  port: 6379
+  password: "redis-123"
+  storage: 1Gi
+
+# Ingress Routing Configuration
+ingress:
+  enabled: true
+  className: nginx
+  host: localhost
+  path: /api(.*)
